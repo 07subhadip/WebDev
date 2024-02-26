@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            margin: 20px;
+        }
+        #container button{
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            background-color: rgb(168, 161, 161);
+            color: white;
+            text-align: center;
+            width: 5rem;
+            height: 3rem;
+            font-size: larger;
+            font-weight: bold;
+        }
+        p{
+            font-size: larger;
+            color: rgb(240, 96, 96);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        const containerEl = document.getElementById("container")
+        containerEl.innerHTML = "<button onclick='buy()''>Buy!</button>"
+        function buy(){
+            containerEl.innerHTML+="<p>Thanks for buying!</p>"
+        }
+    </script>
+</body>
+</html>
